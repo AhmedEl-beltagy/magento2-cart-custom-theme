@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/theme.xsd">
+    <title>Base</title> <!-- Your theme's name -->
+    <parent>Magento/luma</parent> <!-- Inherit from Luma theme -->
+    <media>
+        <preview_image>media/preview.jpg</preview_image> <!-- Path to your theme's preview image -->
+    </media>
+</theme>

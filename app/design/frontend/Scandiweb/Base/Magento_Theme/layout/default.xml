@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- Define a new container for the header banner -->
+        <referenceContainer name="header.container">
+            <container name="header.banner.container" htmlTag="div" htmlClass="header-banner-container" before="-">
+                <block class="Magento\Framework\View\Element\Template" name="header.banner.block"
+                       template="Magento_Theme::header/banner.phtml"
+                       ifconfig="carriers/freeshipping/active"/>
+            </container>
+        </referenceContainer>
+
+        <!-- Move the newsletter subscription block -->
+        <move element="form.subscribe" destination="content" before="footer"/>
+
+    </body>
+</page>
